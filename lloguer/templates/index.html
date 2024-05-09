@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobils</title>
+</head>
+
+<body>
+    <header>
+        <h1>Automobils</h1>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Model</th>
+                    <th>Matricula</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for automobil in automobils %}
+                <tr>
+                    <td>{{ automobil.marca }}</td>
+                    <td>{{ automobil.model }}</td>
+                    <td>{{ automobil.matricula }}</td>
+                </tr>
+
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
